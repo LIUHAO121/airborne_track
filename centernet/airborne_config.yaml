@@ -1,0 +1,28 @@
+load_model: ""
+thresh: 0.3
+arch: "res_18"
+heads:
+  hm: 6
+  wh: 2
+  reg: 2
+head_conv: 64
+input_w: 2048
+input_h: 2048
+mean:
+  - 0.40789654
+  - 0.44719302
+  - 0.47026115
+std:
+  - 0.28863828
+  - 0.27408164
+  - 0.27809835
+num_classes: 6
+test_scales: 1
+down_ratio: 4
+coco_objs:
+  - Airborne
+  - Airplane
+  - Helicopter
+  - Drone
+  - Flock
+  - Bird
